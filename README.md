@@ -74,6 +74,18 @@ SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 
 Replace `your-project-url` and `your-anon-key` with your actual Supabase credentials.
 
+If you prefer not to type these values manually, an example file and a helper script are included:
+
+- `.env.local.example` — shows placeholder keys you can copy from.
+- `scripts\create-env.ps1` — interactive PowerShell script that creates `.env.local` from your input (Windows PowerShell). Run it from the project root:
+
+```powershell
+cd E:\Buildingnewprojecteveryweek\hackthon
+.\scripts\create-env.ps1
+```
+
+After creating `.env.local`, restart the dev server.
+
 #### 4. Initialize Badges (Optional)
 
 The badge system will auto-initialize when you first access the badges API endpoint, or you can manually initialize by clicking the "Initialize Default Badges" button in the Badges tab.
